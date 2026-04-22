@@ -1,6 +1,13 @@
 "use client"
 import { motion } from "framer-motion"
 
+function scrollToCta() {
+  document.getElementById("cta")?.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  })
+}
+
 export default function Navbar() {
   return (
     <motion.nav 
@@ -10,12 +17,13 @@ export default function Navbar() {
     >
       <div className="font-semibold text-lg">Consulting Group</div>
 
-      <a
-        href="#cta"
+      <button
+        type="button"
+        onClick={scrollToCta}
         className="bg-white text-black px-5 py-2 rounded-lg font-medium hover:scale-105 transition"
       >
         Book Call
-      </a>
+      </button>
     </motion.nav>
   )
 }

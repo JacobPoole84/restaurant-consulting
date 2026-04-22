@@ -1,16 +1,33 @@
 "use client"
 import { motion } from "framer-motion"
-import type { MouseEvent } from "react"
+import { useEffect } from "react"
 
-function scrollToCta(event: MouseEvent<HTMLAnchorElement>) {
-  event.preventDefault()
+function scrollToCta() {
   document.getElementById("cta")?.scrollIntoView({
     behavior: "smooth",
     block: "start",
   })
 }
 
+function scrollToServices() {
+  document.getElementById("services")?.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  })
+}
+
 export default function Hero() {
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual"
+    }
+
+    if (window.location.hash) {
+      window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`)
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" })
+    }
+  }, [])
+
   return (
     <section className="min-h-screen flex items-center justify-center px-6 text-center relative overflow-hidden">
 
@@ -41,20 +58,21 @@ export default function Hero() {
           transition={{ delay: 0.4 }}
           className="mt-10 flex gap-4 justify-center"
         >
-          <a
-            href="#cta"
+          <button
+            type="button"
             onClick={scrollToCta}
             className="bg-white text-black px-7 py-3 rounded-xl font-semibold hover:scale-105 transition"
           >
             Book Free Strategy Call
-          </a>
+          </button>
 
-          <a
-            href="#services"
+          <button
+            type="button"
+            onClick={scrollToServices}
             className="border border-white/20 px-7 py-3 rounded-xl hover:bg-white/10 transition"
           >
             View Services
-          </a>
+          </button>
         </motion.div>
       </div>
     </section>
