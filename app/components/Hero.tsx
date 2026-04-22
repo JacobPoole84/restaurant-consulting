@@ -49,7 +49,7 @@ export default function Hero() {
           transition={{ delay: 0.2 }}
           className="mt-6 text-lg text-neutral-400"
         >
-          Most restaurants think they know. Most restaurants are wrong.
+          Most operators think they do. Most operators are wrong.
         </motion.p>
 
         <motion.div
