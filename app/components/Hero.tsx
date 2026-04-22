@@ -1,5 +1,14 @@
 "use client"
 import { motion } from "framer-motion"
+import type { MouseEvent } from "react"
+
+function scrollToCta(event: MouseEvent<HTMLAnchorElement>) {
+  event.preventDefault()
+  document.getElementById("cta")?.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  })
+}
 
 export default function Hero() {
   return (
@@ -34,6 +43,7 @@ export default function Hero() {
         >
           <a
             href="#cta"
+            onClick={scrollToCta}
             className="bg-white text-black px-7 py-3 rounded-xl font-semibold hover:scale-105 transition"
           >
             Book Free Strategy Call
