@@ -14,7 +14,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl md:text-7xl font-bold leading-tight gradient-text"
         >
-          Most restaurants think they are running a 30% food cost. Most restaurants are wrong.
+          Do you know your true food cost?
         </motion.h1>
 
         <motion.p
@@ -23,8 +23,7 @@ export default function Hero() {
           transition={{ delay: 0.2 }}
           className="mt-6 text-lg text-neutral-400"
         >
-          We help restaurants and businesses in every industry increase
-          revenue, fix operations, and scale without chaos.
+          Most restaurants think they are running a 30% food cost. Most restaurants are wrong.
         </motion.p>
 
         <motion.div
