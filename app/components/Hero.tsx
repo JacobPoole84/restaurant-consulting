@@ -14,7 +14,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl md:text-7xl font-bold leading-tight gradient-text"
         >
-          Turn Your Business Into a High-Performance Profit Machine
+          Most restaurants think they are running a 30% food cost. Most restaurants are wrong.
         </motion.h1>
 
         <motion.p
