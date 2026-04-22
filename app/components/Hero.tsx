@@ -23,8 +23,8 @@ export default function Hero() {
           transition={{ delay: 0.2 }}
           className="mt-6 text-lg text-neutral-400"
         >
-          We help restaurants and service businesses increase revenue,
-          fix operations, and scale without chaos.
+          We help restaurants and businesses in every industry increase
+          revenue, fix operations, and scale without chaos.
         </motion.p>
 
         <motion.div

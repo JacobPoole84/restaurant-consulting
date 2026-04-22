@@ -10,7 +10,7 @@ export default function CTA() {
         </h2>
 
         <p className="mt-6 text-neutral-400 text-lg">
-          Book a free strategy call and get a clear, actionable plan.
+          Book a free strategy call and get a clear, actionable plan for your restaurant or business.
         </p>
 
         <a

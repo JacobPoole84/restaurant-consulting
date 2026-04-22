@@ -2,15 +2,15 @@ export default function Services() {
   const services = [
     {
       title: "Restaurant Consulting",
-      desc: "Menu engineering, pricing, kitchen efficiency, and customer flow."
+      desc: "Menu engineering, pricing, kitchen efficiency, and customer flow optimization."
     },
     {
-      title: "Business Growth",
-      desc: "Marketing systems, automation, and revenue scaling strategies."
+      title: "Cross-Industry Business Growth",
+      desc: "Marketing systems, automation, and revenue scaling strategies for any business model."
     },
     {
       title: "Turnaround Strategy",
-      desc: "Rapid 30–90 day plans to fix underperforming businesses."
+      desc: "Rapid 30-90 day plans to fix underperforming restaurants and businesses."
     }
   ]
 
